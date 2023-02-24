@@ -15,6 +15,7 @@ The app will:
 
 ## Demo of deployed app
 The following video demonstrates the application functionality:
+
 https://user-images.githubusercontent.com/121969930/221192377-38f4a6cf-89d3-4ead-9bc1-bbae23cb26cd.mov
 
 ## Deployment: 
