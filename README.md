@@ -14,9 +14,11 @@ The app will:
 * Persist events between refreshes of a page
 
 ## Demo of deployed app
-The following animation demonstrates the application functionality:
+The following video demonstrates the application functionality:
+https://user-images.githubusercontent.com/121969930/221192377-38f4a6cf-89d3-4ead-9bc1-bbae23cb26cd.mov
 
 ## Deployment: 
+https://ke-heslop.github.io/the-day-is-never-done/
 
 ## License:
 MIT-License
