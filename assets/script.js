@@ -1,14 +1,10 @@
-let workDay = {
-    "7 AM": "",
-    "8 AM": "",
-    "9 AM": "",
-    "10 AM": "",
-    "11 AM": "",
-    "12 PM": "",
-    "1 PM": "",
-    "2 PM": "",
-    "3 PM": "",
-    "4 PM": "",
-    "5 PM": "",
-    "6 PM": "",
-  };
+
+ $(document).ready(function() {
+  //Use moment.js to get today's
+  let Today = moment().format("MMMM Do YYYY");
+  //Put the current date into the Jumbotron
+  let displayDate = document.getElementById("currentDay");
+  displayDate.innerHTML = Today;
+  //get the current hour
+  let theHour = moment().format("HH");
+});
