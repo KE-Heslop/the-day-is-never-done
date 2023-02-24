@@ -5,13 +5,13 @@
   //Put the current date into the Jumbotron
   let displayDate = document.getElementById("currentDay");
   displayDate.innerHTML = Today;
-  //get the current hour
   
 });
 
   //Compare the time block on grid to actual hour and change class to so colour styling is applied
   $(".time-div").each(function () {
     var timeBlock = $(this).attr("id").split("-")[1];
+     //get the present hour
     let thisHour = moment().format("HH");
     if (thisHour == timeBlock) {
       $(this).addClass("present");
