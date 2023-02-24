@@ -6,5 +6,21 @@
   let displayDate = document.getElementById("currentDay");
   displayDate.innerHTML = Today;
   //get the current hour
-  let theHour = moment().format("HH");
+  
 });
+
+  //Compare the time block on grid to actual hour and change class to so colour styling is applied
+  $(".time-div").each(function () {
+    var timeBlock = $(this).attr("id").split("-")[1];
+    let thisHour = moment().format("HH");
+    if (thisHour == timeBlock) {
+      $(this).addClass("present");
+      $(this).children(".description").addClass("white-text");
+    } else if (thisHour < timeBlock) {
+      $(this).removeClass("present");
+      $(this).addClass("future");
+    } else if (thisHour > timeBlock) {
+      $(this).removeClass("future");
+      $(this).addClass("past");
+    }
+  });
